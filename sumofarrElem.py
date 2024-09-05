@@ -14,3 +14,4 @@ arr3 = np.concatenate((arr1,arr2))
 print(arr3)
 
 # changes here
+print(sum(arr3))
