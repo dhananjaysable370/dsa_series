@@ -6,8 +6,8 @@ while i <= (n - 1):
         count += 1
     i += 1
 
-
 if count > 0:
     print("number is not prime!")
 else:
     print("number is prime!")
+
