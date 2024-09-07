@@ -4,6 +4,17 @@ int sumN(int a, int b)
 {
     return a + b;
 }
+int sumOfDigits(int num)
+{
+    int sum = 0;
+    while (num != 0)
+    {
+        int digit = num % 10;
+        sum = sum + digit;
+        num = num / 10;
+    }
+    return sum;
+}
 int main()
 {
     int a = 34, b = 25;
@@ -14,5 +25,8 @@ int main()
     cout << sumN(*d, *c) << endl;
     cout << "a = " << a << endl;
     cout << "b = " << b << endl;
+
+    // function call
+    cout << sumOfDigits(9873) << endl;
     return 0;
 }
