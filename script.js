@@ -11,6 +11,8 @@ arr.filter(element => {
 
 console.log(sum);
 
+
+// Star Pattern
 for (let i = 1; i <= 5; i++) {
     for (let j = 1; j <= 5; j++) {
         if (j <= i) {
@@ -21,3 +23,16 @@ for (let i = 1; i <= 5; i++) {
     }
     console.log();
 }
+
+console.log();
+console.log();
+
+// Factorial Recursive Fuction
+function factorial(n) {
+    if (n == 0 || n == 1) { 
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+
+console.log(factorial(5));

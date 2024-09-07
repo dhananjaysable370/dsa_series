@@ -15,12 +15,15 @@ public class Patterns {
         System.out.println();
         System.out.println();
         printStars(7);
+        System.out.println();
+        System.out.println();
+        System.out.println(factorial(5));
     }
 
     public static void printStars(int n) {
-        for (int i = 1; i <= n-2; i++) {
+        for (int i = 1; i <= n - 2; i++) {
             for (int j = 1; j <= n; j++) {
-                if (j >= (n-j) - i && j <= (n-j) + i) {
+                if (j >= (n - j) - i && j <= (n - j) + i) {
                     System.out.print(" * ");
                 } else {
                     System.out.print("   ");
@@ -28,5 +31,12 @@ public class Patterns {
             }
             System.out.println();
         }
+    }
+
+    public static int factorial(int n) {
+        if (n == 0 || n == 1) {
+            return 1;
+        }
+        return (n*factorial(n-1));
     }
 }
