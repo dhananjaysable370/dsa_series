@@ -1,9 +1,9 @@
-# import array as arr
+import array as arr
 
-# ar = arr.array('i',[1,2,3,4,5])
-# arrelemSum = 0
-# for i in range(len(ar)):
-#     arrelemSum = sum(ar)
+ar = arr.array('i',[1,2,3,4,5])
+arrelemSum = 0
+for i in range(len(ar)):
+    arrelemSum = sum(ar)
 
 
 import numpy as np
