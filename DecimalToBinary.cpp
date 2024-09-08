@@ -18,7 +18,7 @@ int main()
 {
     for (int i = 1; i < 11; i++)
     {
-        cout << decimalToBinary(i) << endl;
+        cout << "Number " << i <<" : "<< decimalToBinary(i) << endl;
     }
 
     return 0;

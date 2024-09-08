@@ -14,6 +14,7 @@ int binaryToDecimal(int binNum)
     }
     return ans;
 }
+
 int main()
 {
     cout << binaryToDecimal(11001) << endl;
