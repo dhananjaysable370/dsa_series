@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 
-int decimalToBinary(int decimal)
+int decimalToBinary(int decimalNum)
 {
     int ans = 0, pow = 1;
-    while (decimal > 0)
+    while (decimalNum > 0)
     {
-        int rem = decimal % 2;
-        decimal /= 2;
+        int rem = decimalNum % 2;
+        decimalNum /= 2;
 
         ans += (rem * pow);
         pow *= 10;

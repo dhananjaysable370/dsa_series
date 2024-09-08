@@ -7,7 +7,7 @@ int binaryToDecimal(int binNum)
     while (binNum > 0)
     {
         int rem = binNum % 10;
-        ans += rem * pow;
+        ans += (rem * pow);
 
         binNum /= 10;
         pow *= 2;
@@ -16,6 +16,6 @@ int binaryToDecimal(int binNum)
 }
 int main()
 {
-    cout << binaryToDecimal(101001) << endl;
+    cout << binaryToDecimal(11001) << endl;
     return 0;
 }
