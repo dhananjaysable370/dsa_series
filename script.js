@@ -67,3 +67,21 @@ function sumOfDigits(num) {
 console.log()
 let sumofd = sumOfDigits(9873);
 console.log(Math.round(sumofd));
+
+
+
+console.log()
+console.log()
+console.log()
+
+let factorialSum = function (n) {
+    fact = 1;
+    sumOfFactorial = 0;
+    for (let i = 1; i <= n; i++) {
+        let j = i;
+        sumOfFactorial += (fact *= j);
+    }
+    return sumOfFactorial;
+}
+
+console.log(factorialSum(10)) // sum of all n factorials = 4037913
