@@ -1,6 +1,17 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+int linearSearch(vector<int> arr, int target)
+{
+    for (int i = 0; i < arr.size(); i++)
+    {
+        if (arr[i] == target)
+        {
+            return i;
+        }
+    }
+    return -1;
+}
 void reverseArray(int arr[])
 {
     int start = 0;
@@ -19,10 +30,7 @@ void reverseArray(int arr[])
 }
 int main()
 {
-    int arr[] = {1, 2, 3, 4, 5};
-    // int size = sizeof(arr) / sizeof(arr[0]);
-    // int ans = 0;
-    reverseArray(arr);
-
-    // cout << ans << endl;
+    vector<int> arr = {1, 2, 3, 4, 5};
+    int result = linearSearch(arr,7);
+    cout<<result<<" "<<endl;
 }
