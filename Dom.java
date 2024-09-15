@@ -1,4 +1,4 @@
-public class Main {
+public class Dom {
     public static void main(String args[]) {
         int n = 10;
         int sum = 0;
