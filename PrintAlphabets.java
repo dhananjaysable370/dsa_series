@@ -1,6 +1,9 @@
 public class PrintAlphabets {
     public static void main(String args[]) {
+        LeetCodeProblems obj = new LeetCodeProblems();
         int arr[] = { 1, 1, 1, 2, 2, 3, 3, 4, 5, 5 };
+        int d = obj.uniqueNumber(arr);
+        System.out.println(d);
         int result = uniqueNumber(arr); // returns the result
         System.out.println(result);
     }
@@ -31,5 +34,5 @@ class LeetCodeProblems {
         }
         return arr;
     }
-    
+
 }
