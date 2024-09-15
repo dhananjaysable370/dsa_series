@@ -8,7 +8,6 @@ int binaryToDecimal(int binNum)
     {
         int rem = binNum % 10;
         ans += (rem * pow);
-        
         binNum /= 10;
         pow *= 2;
     }

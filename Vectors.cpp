@@ -12,6 +12,29 @@ int linearSearch(vector<int> arr, int target)
     }
     return -1;
 }
+int binarySearch(vector<int> arr, int target)
+{
+    int start = 0;
+    int end = arr.size() - 1;
+    int mid = start + (end - start) / 2;
+    while (start <= end)
+    {
+        if (arr[mid] == target)
+        {
+            return mid;
+        }
+        else if (arr[mid] < target)
+        {
+            start = mid + 1;
+        }
+        else
+        {
+            end = mid - 1;
+        }
+        mid = start + (end - start) / 2;
+    }
+    return -1;
+}
 void reverseArray(int arr[])
 {
     int start = 0;
@@ -32,5 +55,6 @@ int main()
 {
     vector<int> arr = {1, 2, 3, 4, 5};
     int result = linearSearch(arr,7);
-    cout<<result<<" "<<endl;
+    int result = binarySearch(arr, 3);
+    cout << result << " " << endl;
 }

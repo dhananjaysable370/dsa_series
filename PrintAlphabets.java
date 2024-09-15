@@ -13,3 +13,23 @@ public class PrintAlphabets {
         return ans;
     }
 }
+
+class LeetCodeProblems {
+    public int uniqueNumber(int arr[]) {
+        int ans = 0;
+        for (int i : arr) {
+            ans ^= i;
+        }
+        return ans;
+    }
+
+    public int[] swapAlternate(int arr[]) {
+        for (int i = 0; i < arr.length; i += 2) {
+            int temp = arr[i];
+            arr[i] = arr[i + 1];
+            arr[i + 1] = temp;
+        }
+        return arr;
+    }
+    
+}
