@@ -85,3 +85,14 @@ let factorialSum = function (n) {
 }
 
 console.log(factorialSum(10)) // sum of all n factorials = 4037913
+
+let str = "Hello" + " world";
+console.log(str);
+
+console.log(str.split(" ")[1][3]);
+console.log(str.replace("world", "Universe"));
+console.log(str.split(" ").reverse().join(" "));
+
+let str2 = "Hello";
+console.log(str2.padStart(10, "A"));
+console.log(str2.padEnd(10, "B"));
